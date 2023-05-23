@@ -44,8 +44,7 @@ public class Card {
         }
         sender.balance-=(amount+1);
         receiver.balance+=amount;
-
-
+        System.out.println("Emeliyyat ugurla yerine yetirildi!");
     }
 
     @Override
