@@ -1,3 +1,5 @@
+package az.codersazerbaijan.prac20may.AlgorithmicTasks;
+
 public class Folder {
     String name;
     Folder subFolder;
