@@ -37,8 +37,7 @@ public class Test {
         FuncInterfaceList funcInterfaceList = array -> {
             List<String> localNames = new ArrayList<>();
             array.forEach(element -> {
-                StringBuilder stringBuilder = new StringBuilder(element.toUpperCase());
-                localNames.add(stringBuilder.toString());
+                localNames.add(element.toUpperCase());
             });
             return localNames;
         };
@@ -46,26 +45,26 @@ public class Test {
         System.out.println(funcInterfaceList.toUpperCase(names));
         //5
         FuncInterfaceICut funcInterfaceICut = (List<Integer> array) -> {
-            List<Integer> cutEdedler=new ArrayList<>();
+            List<Integer> cutEdedler = new ArrayList<>();
             array.forEach(element -> {
                 if (element % 2 == 0) {
-                  cutEdedler.add(element);
+                    cutEdedler.add(element);
                 }
             });
             return cutEdedler;
         };
-List<Integer> numbers=new ArrayList<>();
-numbers.add(10);
-numbers.add(11);
-numbers.add(12);
-numbers.add(13);
-numbers.add(14);
-numbers.add(15);
-numbers.add(16);
-numbers.add(17);
-numbers.add(18);
-numbers.add(19);
-numbers.add(20);
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(10);
+        numbers.add(11);
+        numbers.add(12);
+        numbers.add(13);
+        numbers.add(14);
+        numbers.add(15);
+        numbers.add(16);
+        numbers.add(17);
+        numbers.add(18);
+        numbers.add(19);
+        numbers.add(20);
         System.out.println(funcInterfaceICut.cutEdedleriTap(numbers));
     }
 }
